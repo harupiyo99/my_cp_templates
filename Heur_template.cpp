@@ -1,3 +1,6 @@
+// https://github.com/harupiyo99/my_cp_templates/blob/main/Heur_template.cpp
+// ↑リンク
+
 #include <iostream>
 #include <vector>    
 #include <string>    
