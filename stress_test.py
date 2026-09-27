@@ -38,13 +38,27 @@ def compile_cpp():
 def generate_input():
     """
     【ここを問題ごとに書き換えてください】
-    ランダムな入力データを生成し、文字列として返す関数
+    ランダムな入力データを生成し、文字列input_strとして返す関数
     """
-    # 例: 1以上10以下の整数 N と、1以上100以下の配列 A を生成する場合
-    # n = random.randint(1, 10)
-    # a = [random.randint(1, 100) for _ in range(n)]
-    
-    input_str = f"{n}\n" + " ".join(map(str, a)) + "\n"
+
+    # 下のは消しても構わない
+    input_str = ""
+
+    # 例: 
+    # 1. [l, r]の中からランダムで整数変数Nを生成
+    # N = random.randint(l, r)
+
+    # 2. a~zの中からランダムで文字変数生成
+    # c = random.choice(string.ascii_lowercase)
+
+    # 3. 文字列変数 (例: 長さ [l, r] の文字列)
+    # s_len = random.randint(l, r)
+    # s = "".join(random.choices(string.ascii_lowercase, k=s_len))
+
+    # 4. 1次元配列 (例: 長さ [l, r] で、[b, u]の範囲の値の整数の配列)
+    # a_len = random.randint(l, r)
+    # a = [random.randint(b, u) for _ in range(a_len)]
+
     return input_str
 
 def main():
